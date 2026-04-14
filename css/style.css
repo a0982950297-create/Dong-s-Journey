@@ -1,0 +1,300 @@
+/* ===================================== */
+/* 🔰 Base（保持不動） */
+/* ===================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===================================== */
+/* 🧭 Navbar（微調穩定性） */
+/* ===================================== */
+
+header {
+  border-bottom: 1px solid #eee;
+}
+
+.navbar-brand .fw-bold {
+  font-size: 20px;
+}
+
+.navbar-brand small {
+  font-size: 18px;
+  color: #888;
+  letter-spacing: 1px;
+}
+
+.navbar .nav-link {
+  position: relative;
+  display: inline-block;
+  font-size: 15px;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar .nav-link:hover {
+  color: #000;
+}
+
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #333;
+  transition: 0.3s;
+}
+
+.navbar .nav-link:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .navbar .nav-link::after {
+    display: none;
+  }
+}
+
+/* ===================================== */
+/* 🌄 Hero（統一系統） */
+/* ===================================== */
+
+.hero,
+.explore-hero,
+.city-hero,
+.food-hero {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+/* 高度統一邏輯 */
+.hero { height: 75vh; }
+.explore-hero { height: 40vh; }
+.city-hero { height: 50vh; }
+.food-hero { height: 60vh; }
+
+/* 統一置中 */
+.hero,
+.food-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 統一遮罩 */
+.hero::before,
+.explore-hero::before,
+.city-hero::before,
+.food-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.3);
+}
+
+/* 內容層 */
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  padding: 0 20px;
+}
+
+/* Hero 按鈕 */
+.hero-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: white;
+  color: #333;
+  border-radius: 50px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.hero-btn:hover {
+  background: #333;
+  color: white;
+}
+
+/* ===================================== */
+/* 🎬 Animation（統一控制） */
+/* ===================================== */
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.6s;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 套用到卡片 */
+.city-card,
+.food-item {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.6s;
+}
+
+.city-card.show,
+.food-item.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===================================== */
+/* 🏙️ Card（幾乎不動） */
+/* ===================================== */
+
+.city-link {
+  display: block;
+}
+
+.city-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+  aspect-ratio: 1 / 1;
+}
+
+.city-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.city-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.city-card:hover img {
+  transform: scale(1.1);
+}
+
+.city-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+  color: white;
+  background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+}
+
+/* 🔖 分類標籤（屬於卡片的一部分） */
+.city-info .category-links span {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  padding: 4px 10px;
+  margin: 3px 5px 0 0;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+
+/* ===================================== */
+/* 🍜 Food（微調一致） */
+/* ===================================== */
+
+.food-intro {
+  max-width: 700px;
+  margin: 80px auto;
+  text-align: center;
+  color: #555;
+}
+
+.food-item {
+  margin-bottom: 100px;
+}
+
+.food-img {
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transition: 0.4s;
+}
+
+.food-img:hover {
+  transform: scale(1.03);
+}
+
+.food-text {
+  max-width: 500px;
+  margin-top: 40px;
+}
+
+/* ===================================== */
+/* 📌 Footer（修正衝突） */
+/* ===================================== */
+
+.footer {
+  background: #f8f8f8;
+  padding: 20px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap; /* 🔥 防爆版 */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  font-size: 18px;
+  color: #666;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #000;
+}
+
+/* ===================================== */
+/* 📱 RWD（補強） */
+/* ===================================== */
+
+@media (max-width: 768px) {
+
+  .hero h1,
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+
+  .food-text {
+    margin-top: 20px;
+  }
+
+  .footer-row {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
