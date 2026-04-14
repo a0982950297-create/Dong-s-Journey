@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>景點探索｜Dong’s Journey｜東朋旅遊札記</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- favicon品牌logo瀏覽器旁小圖 -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- 自己的CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- SEO -->
+  <meta name="description" content="Dong’s Journey 東朋旅遊札記｜探索台灣、日本、泰國旅遊景點，包含城市分類與旅行方向，帶你找到下一段旅程。">
+  <meta name="keywords" content="台灣旅遊,日本旅遊,泰國旅遊,城市探索,旅遊分類">
+  <meta name="author" content="Dong’s Journey 東朋">  
+  <!-- Open Graph（社群分享用） -->
+  <meta property="og:title" content="景點探索 Explore｜Dong’s Journey">
+  <meta property="og:description" content="從城市到國家，找到屬於你的旅行方向。">
+  <meta property="og:image" content="https://www.trial-162253.url.tw/images/explore/hero-explore.webp">  
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.trial-162253.url.tw/explore.html">
+  <!-- GA追蹤碼 -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0VPB5QQFWV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-0VPB5QQFWV');
+  </script>
+</head>
+
+<body id="top">
+<!-- 導覽列 -->
+<header class="border-bottom">
+  <nav class="navbar navbar-expand-lg navbar-light container py-3">
+    <!-- Logo -->
+    <a class="navbar-brand" href="index.html">
+      <div>
+        <div class="fw-bold">Dong’s Journey</div>
+        <small class="text-muted">東朋旅遊札記</small>
+      </div>
+    </a>
+    <!-- 漢堡按鈕 -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- 選單 -->
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">首頁</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="journey-story.html">旅程故事</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link  active dropdown-toggle" href="#" data-bs-toggle="dropdown">
+            景點探索
+          </a>
+
+          <ul class="dropdown-menu">
+            <!-- 台灣 -->
+            <li class="dropdown-header">台灣</li> 
+            <li><a class="dropdown-item" href="explore.html#taiwan-north">北部</a></li>
+            <li><a class="dropdown-item" href="explore.html#taiwan-central">中部</a></li>
+            <li><a class="dropdown-item" href="explore.html#taiwan-south">南部</a></li>
+            <li><a class="dropdown-item" href="explore.html#taiwan-east">東部</a></li>
+            <li><a class="dropdown-item" href="explore.html#taiwan-islands">外島</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <!-- 日本 -->
+            <li class="dropdown-header">日本</li> 
+            <li><a class="dropdown-item" href="explore.html#tokyo">東京</a></li>
+            <li><a class="dropdown-item" href="explore.html#osaka">大阪</a></li>
+            <li><a class="dropdown-item" href="explore.html#kyoto">京都</a></li>
+            <li><a class="dropdown-item" href="explore.html#nara">奈良</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <!-- 泰國 -->
+            <li class="dropdown-header">泰國</li> 
+            <li><a class="dropdown-item" href="explore.html#bangkok">曼谷</a></li>
+            <li><a class="dropdown-item" href="explore.html#pattaya">芭達雅</a></li>
+            <li><hr class="dropdown-divider"></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="featured.html">精選推薦</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="https://toolkit.url.com.tw/bbs/index.php?email=bbs@trial-162253.url.tw" target="_blank">留言發問</a>
+        </li>
+
+      </ul>
+    </div>
+
+  </nav>
+</header>
+
+<main>
+<!-- Hero -->
+<section class="explore-hero d-flex align-items-center justify-content-center text-center"
+  style="background-image: url('images/explore/hero-explore.webp');"
+  aria-label="網站主視覺">
+
+  
+  <div class="hero-content container">
+    <h1 class="fade-up">旅遊景點探索｜台灣、日本、泰國</h1>
+    <p class="mt-3 fade-up">Explore the Journey</p>
+  </div>
+</section>
+
+<!-- 國內旅遊 -->
+<section id="taiwan" class="container my-5">
+  <h2 class="mb-4">台灣旅遊</h2>
+  <div class="row g-4">
+    <!-- 北部 -->
+    <div id="taiwan-north" class="col-md-4 scroll-offset">
+     <a href="pages/taiwan-north/north.html" class="city-link">        
+      <div class="city-card">
+        <img src="images/explore/liberty-square-taipei-arch.webp" 
+        alt="台灣台北自由廣場牌樓，代表性文化地標"
+        loading="lazy">
+        <div class="city-info">
+         <h3>北部</h3>
+         <p>繁華都市節奏</p>
+         <div class="category-links mt-2">
+          <span>台北</span>
+          <span>新北</span>
+          <span>基隆</span>
+         </div>
+        </div>
+       </div>
+      </a>
+    </div>
+    <!-- 中部 -->
+    <div id="taiwan-central" class="col-md-4 scroll-offset">
+     <a href="pages/taiwan-central/taiwan-central.html" class="city-link">        
+      <div class="city-card">
+        <img src="images/explore/rainbow-village-taichung-art-street.webp" 
+        alt="台灣台中彩虹眷村彩繪牆，繽紛藝術街景"
+        loading="lazy">
+        <div class="city-info">
+         <h3>中部</h3>
+         <p>山海交織慢旅</p>
+         <div class="category-links mt-2">
+          <span>台中</span>
+          <span>南投</span>
+          <span>彰化</span>
+         </div>
+        </div>
+       </div>
+      </a>
+    </div>
+    <!-- 南部 -->
+    <div id="taiwan-south" class="col-md-4 scroll-offset">
+     <a href="pages/taiwan-south/taiwan-south.html" class="city-link">        
+      <div class="city-card">
+        <img src="images/explore/kenting-beach-footprints-sunset.webp" 
+        alt="台灣屏東墾丁沙灘夕陽與腳印，放鬆海岸氛圍"
+        loading="lazy">
+        <div class="city-info">
+         <h3>南部</h3>
+         <p>陽光熱情海岸</p>
+         <div class="category-links mt-2">
+          <span>台南</span>
+          <span>高雄</span>
+          <span>屏東</span>
+         </div>
+        </div>
+       </div>
+      </a>
+    </div>
+    <!-- 東部 -->
+    <div id="taiwan-east" class="col-md-4 scroll-offset">
+     <a href="pages/taiwan-east/taiwan-east.html" class="city-link">        
+      <div class="city-card">
+        <img src="images/explore/taitung-taitung-coast-road-view.webp" 
+        alt="台灣台東太麻里海岸公路，筆直通往藍色海洋"
+        loading="lazy">
+        <div class="city-info">
+         <h3>東部</h3>
+         <p>壯闊自由山海一線</p>
+         <div class="category-links mt-2">
+          <span>花蓮</span>
+          <span>台東</span>
+          <span>太麻里</span>
+         </div>
+        </div>
+       </div>
+      </a>
+    </div>
+    <!-- 外島 -->
+    <div id="taiwan-islands" class="col-md-4 scroll-offset">
+     <a href="pages/taiwan-islands/taiwan-islands.html" class="city-link">        
+      <div class="city-card">
+        <img src="images/explore/penghu-double-heart-stone-weir.webp" 
+        alt="台灣澎湖雙心石滬海景，浪漫經典地標"
+        loading="lazy">
+        <div class="city-info">
+         <h3>外島</h3>
+         <p>秘境海島風情</p>
+         <div class="category-links mt-2">
+          <span>澎湖</span>
+          <span>金門</span>
+          <span>馬祖</span>
+         </div>
+        </div>
+       </div>
+      </a>
+    </div>
+  </div>
+</section>
+<!-- 國外旅遊 -->
+<section id="japan" class="container my-5">
+  <h2 class="mb-4">國外旅遊</h2>
+  <!-- 日本 -->
+  <h3 class="country-title">日本 Japan</h3>
+  <div class="row g-4 mb-5">
+  <!-- 卡片 -->
+    <!-- 東京 -->
+    <div id="tokyo" class="col-md-3 scroll-offset">
+     <a href="pages/tokyo/tokyo.html" class="city-link">        
+      <div class="city-card">
+       <img src="images/pages/tokyo/hero-tokyo-tower-night.webp" 
+       alt="日本東京港區東京鐵塔夜景，城市代表地標"
+       loading="lazy">
+        <div class="city-info">
+         <h3>東京</h3>
+         <p>霓虹閃耀都市</p>
+         <div class="category-links mt-2">
+          <span>日本</span>
+          <span>東京</span>
+          <span>港區</span>
+         </div>
+        </div>
+       </div>
+      </a>
+    </div>
+
+    <!-- 京都 -->
+    <div id="kyoto" class="col-md-3 scroll-offset">
+     <a href="pages/kyoto/kyoto.html" class="city-link">        
+      <div class="city-card">
+       <img src="images/explore/kyoto-ninenzaka-street-sunset.webp" 
+       alt="日本京都東山區二年坂街道，日式傳統風情"
+       loading="lazy">
+        <div class="city-info">
+         <h3>京都</h3>
+         <p>古都靜謐風華</p>
+         <div class="category-links mt-2">
+          <span>日本</span>
+          <span>京都</span>
+          <span>二年阪</span>
+         </div>
+        </div>
+       </div>
+      </a>
+    </div>
+
+    <!-- 大阪 -->
+    <div id="osaka" class="col-md-3 scroll-offset">
+     <a href="osaka.html" class="city-link">        
+      <div class="city-card">
+       <img src="images/explore/osaka-dotonbori-river-sunset.webp" 
+       alt="日本大阪道頓堀運河夜景，霓虹與美食文化"
+       loading="lazy">
+        <div class="city-info">
+         <h3>大阪</h3>
+         <p>美食熱鬧之都</p>
+         <div class="category-links mt-2">
+          <span>日本</span>
+          <span>大阪</span>
+          <span>道頓堀</span>
+         </div>
+        </div>
+       </div>
+      </a>
+    </div>
+
+    <!-- 奈良 -->
+    <div id="nara" class="col-md-3 scroll-offset">
+     <a href="nara.html" class="city-link">        
+      <div class="city-card">
+       <img src="images/explore/nara-deer-park-sunset-autumn.webp" 
+       alt="日本奈良公園梅花鹿與古寺，悠閒文化景觀"
+       loading="lazy">
+        <div class="city-info">
+         <h3>奈良</h3>
+         <p>悠閑鹿與古城</p>
+         <div class="category-links mt-2">
+          <span>日本</span>
+          <span>奈良</span>
+          <span>小鹿公園</span>
+         </div>
+        </div>
+       </div>
+      </a>
+    </div>
+  </div>
+</section>
+  <!-- 泰國 -->
+<section id="thailand" class="container my-5">
+  <h2 class="country-title">泰國 Thailand</h2>
+  <div class="row g-4">
+    <!-- 曼谷 -->
+    <div id="bangkok" class="col-md-6 scroll-offset">
+     <a href="bangkok.html" class="city-link">        
+      <div class="city-card">
+       <img src="images/explore/bangkok-night-street-tuk-tuk.webp" 
+       alt="泰國曼谷街頭夜市與嘟嘟車，城市熱鬧氛圍"
+       loading="lazy">
+        <div class="city-info">
+         <h3>曼谷</h3>
+         <p>熱鬧夜不眠城市</p>
+         <div class="category-links mt-2">
+          <span>泰國</span>
+          <span>曼谷</span>
+          <span>嘟嘟車</span>
+         </div>
+        </div>
+       </div>
+      </a>
+    </div>
+
+    <!-- 芭達雅 -->
+    <div id="pattaya" class="col-md-6 scroll-offset">
+     <a href="pattaya.html" class="city-link">        
+      <div class="city-card">
+       <img src="images/explore/pattaya-floating-market-boat.webp" 
+       alt="泰國芭達雅海灘與水上市場，度假放鬆景點"
+       loading="lazy">
+        <div class="city-info">
+         <h3>芭達雅</h3>
+         <p>陽光沙灘假期</p>
+         <div class="category-links mt-2">
+          <span>泰國</span>
+          <span>芭達雅</span>
+          <span>水上市場</span>
+         </div>
+        </div>
+       </div>
+      </a>
+    </div>
+    
+  </div>
+
+</section>
+</main>
+<!-- Footer -->
+<footer class="footer mt-5">
+  <div class="container footer-row">
+    <!-- 左 -->
+    <div class="footer-left">
+      Dong’s Journey © 2026
+    </div>
+    <!-- 中 -->
+    <div class="footer-center social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a> 
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+    <!-- 右 -->
+    <div class="footer-right">
+      <a href="#top" class="back-to-top">回到頂端 ↑</a>
+    </div>
+  </div>
+</footer>
+<!-- 動畫 -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+
+    // 🔥 Hero動畫（穩定版）
+    window.addEventListener("load", function () {
+      document.querySelectorAll('.hero .fade-up').forEach((el, index) => {
+        setTimeout(() => {
+          el.classList.add('show');
+        }, index * 200);
+      });
+    });
+
+    // 🔥 卡片動畫（scroll）
+    const cards = document.querySelectorAll('.food-item, .city-card');
+
+    function showCards() {
+      cards.forEach((card, index) => {
+        const rect = card.getBoundingClientRect();
+
+        if (rect.top < window.innerHeight - 100) {
+          setTimeout(() => {
+            card.classList.add('show');
+          }, (index % 4) * 150);
+        }
+      });
+    }
+
+    window.addEventListener('scroll', showCards);
+    showCards();
+
+  });
+</script>
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+</script>
+</body>
+</html>
